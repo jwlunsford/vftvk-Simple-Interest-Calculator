@@ -13,6 +13,13 @@ function compute() {
     var t = document.getElementById("time").value;
     var result = document.getElementById("result");
 
+    // validate principal input
+    if (p <= 0) {
+        window.alert("Please enter a principal value of 1 or greater."); 
+        p.focus(); 
+        return false; 
+    }
+
     // return result of simple interest calculation
     let accrued = p * (1 + (r / 100 * t));
     let interest = accrued - p;
