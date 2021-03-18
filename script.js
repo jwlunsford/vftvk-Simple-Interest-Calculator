@@ -27,6 +27,6 @@ function compute() {
     // build the output
     result.textContent = `If you deposit ${p}
                     at an interest rate of ${r}%.
-                    You will recieve an amount of ${interest}
+                    You will recieve an amount of ${interest.toFixed(2)}
                     in the year ${2021 + parseInt(t)}.`;
 }
