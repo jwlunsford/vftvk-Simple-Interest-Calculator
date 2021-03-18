@@ -62,7 +62,7 @@ h1 {
     transition: opacity .2s;
 }
 
-input, select, button {
+input, select, button, p {
     grid-column: 2 / 4;
     width: auto;
     margin: 0;
